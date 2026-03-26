@@ -228,9 +228,7 @@ class TestCheckoutInputValidation:
         """
         cart.add_to_cart("alice@example.com", "laptop", 1)
         cart.add_to_cart("bob@example.com", "mouse", 5)
-
         checkout.checkout("alice@example.com")
 
         bob_cart = cart.get_cart("bob@example.com")
         assert bob_cart == {"mouse": 5}   # Bob's cart untouched
-
