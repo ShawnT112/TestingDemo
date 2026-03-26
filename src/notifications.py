@@ -5,7 +5,12 @@
 _sent = []
 
 
-def send_confirmation(email: str, order_id: str, item_id: str, quantity: int) -> None:
+def send_confirmation(
+    email: str,
+    order_id: str,
+    item_id: str,
+    quantity: int,
+) -> None:
     """Record a confirmation notification (simulates sending an email)."""
     record = {
         "email": email,
@@ -25,3 +30,4 @@ def get_sent() -> list:
 def clear():
     """Clear notification history. Call this in test setUp/teardown."""
     _sent.clear()
+
