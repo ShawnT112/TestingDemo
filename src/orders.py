@@ -3,8 +3,6 @@
 # In a real system this would call an email/SMS API.
 
 _sent = []
-
-
 def send_confirmation(
     email: str,
     order_id: str,
@@ -30,4 +28,3 @@ def get_sent() -> list:
 def clear():
     """Clear notification history. Call this in test setUp/teardown."""
     _sent.clear()
-
