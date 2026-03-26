@@ -3,6 +3,8 @@
 # In a real system this would call an email/SMS API.
 
 _sent = []
+
+
 def send_confirmation(
     email: str,
     order_id: str,
