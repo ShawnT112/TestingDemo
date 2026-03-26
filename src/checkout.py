@@ -1,6 +1,5 @@
 # checkout.py
 # The "Place Order" feature — the complete user-facing workflow.
-#
 # This is the FEATURE we will test in Step 2 (Feature/Functional Testing).
 # It coordinates cart, inventory, orders, and notifications to complete
 # a purchase from start to finish.
@@ -88,4 +87,3 @@ def checkout(customer_email: str) -> CheckoutResult:
 
     cart.clear_cart(customer_email)
     return CheckoutResult(True, "Checkout complete", order_ids=order_ids)
-
