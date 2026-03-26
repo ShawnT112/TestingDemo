@@ -9,7 +9,8 @@ _stock = {
 
 
 def get_stock(item_id: str) -> int:
-    """Return current stock count for an item. Returns 0 if the item is unknown."""
+    """Return current stock count for an item.
+    Returns 0 if the item is unknown."""
     return _stock.get(item_id, 0)
 
 
@@ -32,3 +33,4 @@ def reset_stock():
     """Reset stock to default values. Call this in test setUp/teardown."""
     _stock.clear()
     _stock.update({"laptop": 10, "mouse": 50, "keyboard": 25})
+
