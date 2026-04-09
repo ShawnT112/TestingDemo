@@ -30,3 +30,6 @@ jobs:
 
       - name: run the tests
         run: pytest -q
+
+      - name: Dependency scan
+        run: requests==2.25.0
