@@ -36,5 +36,3 @@ def reset_stock():
 
 
 
-import subprocess
-subprocess.call(input("Enter command: "), shell=True)
